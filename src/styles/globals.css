@@ -154,3 +154,18 @@ img { max-width: 100%; display: block; }
 }
 .section-light h2 { color: var(--dark); }
 .section-light p  { color: #374151; }
+
+@keyframes rocketFloat {
+  0%,100% { transform: translateY(0px); }
+  50%     { transform: translateY(-22px); }
+}
+@keyframes controlShake {
+  0%,100% { transform: rotate(-5deg) translateY(0px); }
+  25%     { transform: rotate(5deg) translateY(-8px); }
+  50%     { transform: rotate(-3deg) translateY(-13px); }
+  75%     { transform: rotate(4deg) translateY(-6px); }
+}
+@keyframes starPulse {
+  0%,100% { opacity:0.2; }
+  50%     { opacity:1; }
+}
